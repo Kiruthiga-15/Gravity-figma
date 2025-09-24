@@ -1,0 +1,182 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter',sans-serif;
+}
+:root{
+    --background-color: #141619;
+    --primary-color: #FFFFFF;
+    --secondary-color:#E5E5E5;
+    --font-size-xx: xx-small;
+    --font-size-x:small;
+    --font-size-medium:medium;
+ 
+    
+}
+.my-gradient {
+  background: linear-gradient(135deg, #665DCD, #5FA4E6, #D2AB67);
+  padding: 10px;
+}
+.gradient-border {
+  border-width: 1px;
+  border-style: solid;
+  border-image: linear-gradient(135deg, #665DCD, #5FA4E6, #D2AB67) 1;
+}
+.gradient-border-bottom {
+  border-bottom: 2px solid transparent;
+  border-image: linear-gradient(90deg, #665DCD, #5FA4E6, #D2AB67) 1;
+  border-image-slice: 1;
+}
+.gradient-border-top {
+  border-top: 2px solid transparent;
+  border-image: linear-gradient(90deg, #665DCD, #5FA4E6, #D2AB67) 1;
+  border-image-slice: 1;
+  
+}
+.gradient-border-end {
+  border-right: 2px solid transparent;
+  border-image: linear-gradient(90deg, #665DCD, #5FA4E6, #D2AB67) 1;
+  border-image-slice: 1;
+  
+}
+.my-dot{
+    background: linear-gradient(135deg,#5FA4E6,#D2AB67,#665DCD);
+    width: 10px;
+    height: 10px;
+    
+    border-radius: 10px;
+}
+a{
+    text-decoration: none ;
+    display: inline-block;
+   color: var(--primary-color);
+   cursor: pointer;
+}
+h1,h2,h4,h5,h6,h3,span,a{
+    color: var(--primary-color);
+    
+}
+h6{
+    font-weight:bold;
+}
+p{
+    color: var(--secondary-color);
+    font-size: xx-small;
+   
+}
+
+
+li{
+    list-style-type: none;
+}
+.main-header{
+  padding: 10px;
+  background-color: var(--background-color);
+}
+body{
+    background-color: var(--background-color);
+}
+.about,.crypto-market{
+  padding: 17px;
+  
+  background-color: var(--background-color);
+}
+.about .about-parent-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.about .about-parent-1 .row .col-md-3 .border{
+    border: 1px solid green;
+}
+
+@media (max-width:768px) {
+    .gradient-border,
+    .gradient-border-bottom,
+    .gradient-border-top,
+    .gradient-border-end ,
+    .gradient-border-mobile {
+  border-width: 1px;
+  border-style: solid;
+  border-image: linear-gradient(135deg, #665DCD, #5FA4E6, #D2AB67) 1;
+}
+.about >.about-row {
+     margin: 0 34px;;
+}
+}
+
+/* <!-- Crypto Market Making --> */
+.crypto-market .crypto-market-wrapper{
+    max-width: 400px;
+    margin: 0 0 0 5rem;
+}
+.crypto-market .container >div:last-child{
+    position: relative;      /* needed for absolute positioning of pseudo-element */
+  overflow: hidden; 
+   
+}
+.crypto-market .container > div:last-child::before {
+    content: "";
+    position: absolute;
+    top: -176px;
+    left: -170px;
+    width: 84%;
+    height: 115%;
+    background: url(./img/market/bg-1.png) no-repeat;
+    background-size: cover;
+    transform: rotate(-296deg);
+    z-index: 0;
+    pointer-events: none;
+}
+.crypto-market-wrapper-img1{
+    max-width: 100%;
+    width: 600px;
+ margin: 1px 0 0 -6rem;
+}
+.crypto-market-wrapper-img{
+    max-width: 100%;
+    width: 600px;
+ margin: 1px 0 0 5rem;
+}
+
+.col-md-6:nth-of-type(3) {
+   order: 2;
+}
+.col-md-6:nth-of-type(4) {
+   order: 1;
+}
+@media (max-width:768px) {
+
+.crypto-market .container > div:last-child::before {
+    display: none;
+}
+
+.col-md-6:nth-of-type(3) {
+   order: 1;
+}
+.col-md-6:nth-of-type(4) {
+   order: 2;
+}
+.crypto-market .crypto-market-wrapper {
+    
+           margin: 42px 0 0 1rem;
+           display: flex;
+                   flex-direction: column;
+        justify-content: center;
+        align-items: start;
+}
+.crypto-market-wrapper-img {
+    
+           margin: 10px 0 0 0rem;
+}
+.crypto-market-wrapper-img1{
+    margin: 0px 0 0 -4rem;
+}
+}
