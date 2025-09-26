@@ -40,6 +40,9 @@
   border-image-slice: 1;
   
 }
+.second-border{
+    background: linear-gradient(135deg,#5FA4E6,#D2AB67,#665DCD);
+}
 .my-dot{
     background: linear-gradient(135deg,#5FA4E6,#D2AB67,#665DCD);
     width: 10px;
@@ -47,7 +50,7 @@
     
     border-radius: 10px;
 }
-a{
+a,span{
     text-decoration: none ;
     display: inline-block;
    color: var(--primary-color);
@@ -178,5 +181,40 @@ body{
 }
 .crypto-market-wrapper-img1{
     margin: 0px 0 0 -4rem;
+}
+}
+
+  /* <!-- Our Partners & Friends --> */
+.market .market-heading{
+  height: 50vh;
+}
+.market .market-img >img{
+  width: 57%;
+  margin-bottom: 10px;
+    transition: filter 0.3s ease;
+}
+/* Blur only for first and sixth images */
+.market .market-img.img-1 > img,
+.market .market-img.img-6 > img{
+filter: blur(2px);
+}
+
+@media (max-width:768px){
+  .market .market-heading{
+  height: 10vh;
+}
+  .market .market-img >img{
+  width: 60%;
+  margin-bottom: 4px;
+    transition: filter 0.3s ease;
+}
+/* Blur only for first and sixth images */
+.market .market-img.img-1 > img,
+.market .market-img.img-6 > img{
+display: none;
+}
+.market .col-md-6>div:last-child{
+      margin: 0 1rem 0 1rem;
+   
 }
 }
