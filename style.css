@@ -72,6 +72,7 @@ p{
 
 li{
     list-style-type: none;
+    color: #E5E5E5;
 }
 .main-header{
   padding: 10px;
@@ -182,6 +183,12 @@ body{
 .crypto-market-wrapper-img1{
     margin: 0px 0 0 -4rem;
 }
+span{
+  
+    display: inline;
+  
+}
+
 }
 
   /* <!-- Our Partners & Friends --> */
@@ -217,4 +224,44 @@ display: none;
       margin: 0 1rem 0 1rem;
    
 }
+.gravity-team{
+  margin: 5rem 0rem 5rem 0rem !important;
+ }
+ .company img {
+    width: 22px !important;
+    margin-bottom: 10px;
 }
+}
+
+/* <!-- company --> */
+.company img{
+  width: 40px;
+}
+.company .company-dots{
+  width: 5px;
+  height: 5px;
+  background: #E5E5E5;
+  border-radius: 10px;
+}
+.company .company-dot-1{
+  background-color: #665DCD ;
+}
+
+/*       <!-- Join
+ Gravity Team --> */
+
+ .gravity-team{
+  margin: 5rem 3rem 5rem 3rem;
+ }
+
+ .gravity-team .row>div:nth-child(1){
+  background: url(./img/company/bg.png) no-repeat ;
+  /* background-color: #D2AB67; */
+ }
+ .footer .footer-img{
+  width: 10px;
+ }
+/* 
+ footer{
+  margin: 0 -26rem 0 3rem;
+ } */
